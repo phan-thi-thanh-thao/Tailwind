@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rectangle{
+    @apply h-40 w-60
+}
+
+.square{
+    @apply w-60 h-60
+}
+

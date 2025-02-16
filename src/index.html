@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo tailwindCSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+
+    <!-- hình chữ nhật có chiều dài là 60px với rộng là 30px có bg là màu đỏ -->
+    <div class="h-16 w-32 bg-red-500 mb-7"></div>
+
+    <div class="mt-7 flex justify-between">
+      <div class="rectangle bg-red-500"></div>
+      <div class="rectangle bg-blue-500"></div>
+      <div class="rectangle bg-yellow-500"></div>
+    </div>
+
+    <!-- bài tập 2: tạo 4 hình vuông có màu sắc khác nhau sử dụng display: grid để đưa chia bố cục thành 4 cột, sử dụng @apply để tái sử dụng những utilities class  -->
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 container mx-auto">
+      <div class="bg-red-500 square"></div>
+      <div class="bg-blue-500 square"></div>
+      <div class="bg-yellow-500 square"></div>
+      <div class="bg-gray-500 square"></div>
+      <div class="square bg-secodary p-45"></div>
+    </div>
+
+    <!-- responsive -->
+
+    <!-- min-width: áp dụng cho mobile first(kích thước tối thiếu) 
+    max-width: áp dụng cho laptop first (kích thước tối đa) -->
+    <div class="bg-secodary square sm:bg-yellow-500 md:bg-red-500"></div>
+
+    <!-- bài tập 3: thay đổi kích chữ và màu sắc, từ phía mobile sẽ là màu đỏ và 16px, tablet(md) sẽ là màu vàng và 48px, laptop(xl) sẽ là màu xanh và 80px -->
+    
+    <h1 class="text-red-500 text-base md:text-yellow-500 md:text-5xl xl:text-blue-500 xl:text-80">Hello BC81</h1>
+  </body>
+</html>
